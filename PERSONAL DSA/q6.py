@@ -1,5 +1,7 @@
+# Function Definition
 def ternarySearch(arr, key, i, j):
     while i <= j:
+        # compute the value of mid1 and mid2
         mid1 = i+(j-i)//3
         mid2 = j-(j-i)//3
         
@@ -7,13 +9,19 @@ def ternarySearch(arr, key, i, j):
             return mid1
         elif arr[mid2] == key:
             return mid2
+        # first part of the ternary search 
         elif arr[mid1] > key:
+            # recursive call
             return ternarySearch(arr, key, i, mid1-1)
+        # third part of the ternary search
         elif arr[mid2] < key:
+            # recursive call
             return ternarySearch(arr, key, mid2+1, j)
         else:
+            # second part of the ternary search
+            # recursive call
             return ternarySearch(arr, key, mid1+1, mid2-1)
-    
+    ## if the searching element is not present in the array
     return -1
 
 
