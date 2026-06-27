@@ -1,4 +1,5 @@
 # Function Definition
+# TERNARY SEARCH
 def ternarySearch(arr, key, i, j):
     while i <= j:
         # compute the value of mid1 and mid2
