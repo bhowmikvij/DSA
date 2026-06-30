@@ -14,3 +14,4 @@
 # NCB=> Count Sort, Radix Sort, Bucket Sort
 
 # Bubble Sort=> TIME COMPLEXITY=> O(n^2)
+# Selection Sort=> TIME COMPLEXITY=> O(n^2)
