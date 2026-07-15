@@ -85,3 +85,31 @@
 # [10, 20,  , 40,  ,  ,  , 50]
 # There is very wastage of space in array so that's why we use LINKED LIST
 
+# --------------------------------------------------------------------------------------------------------------------------
+
+# INSERTION
+
+# Height of CBT-> Minheap/ Maxheap
+# Time Complexity-> O(logn)
+
+# 1. number of nodes = 2^h -1
+# At default Level = 0
+#            Height = 1
+# Time Complexity
+#    h = log2(n+1) ................... 2 is in the Base
+#    l = log2(n+1) ................... 2 is in the Base
+
+# But it can also be start at Level = 1
+# Dont argue the interviewer
+# Time Complexity-> O(logn) 
+
+# DELETION
+# Time Complexity-> O(logn) 
+
+# ---------------------------------------
+
+# HEAPSORT
+# 1. Delete the element from minheap and store it.
+# n.(Delete)
+# Sorted Array(Ascending Order)
+# Time Complexity-> O(nlogn)
