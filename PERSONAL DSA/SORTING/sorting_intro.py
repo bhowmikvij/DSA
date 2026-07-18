@@ -113,3 +113,12 @@
 # n.(Delete)
 # Sorted Array(Ascending Order)
 # Time Complexity-> O(nlogn)
+
+# ------------------------------------------------------------------------------------------------------------------------
+
+# BUILD OF MINHEAP
+# 123, 234, 45, 3, 34, 567, 36, 12
+
+# V.V.V.IMPORTANT INTERVIEW QUESTION
+# For bulid of minheap
+# Time Complexity-> O(n)
