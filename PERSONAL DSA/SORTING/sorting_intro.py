@@ -122,3 +122,11 @@
 # V.V.V.IMPORTANT INTERVIEW QUESTION
 # For bulid of minheap
 # Time Complexity-> O(n)
+
+# -----------------------------------------------------------------------------------------------------------------------
+
+# Assignment
+#  arr = [1, 3, 7, 9, 12, 10, 8, 16, 18, 22, 27]
+# create a bulidHeap method that returns a minheap
+
+# 
