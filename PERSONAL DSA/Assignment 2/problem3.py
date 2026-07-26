@@ -23,7 +23,6 @@ def kClosest(points, k):
 
     return result
 
-
 points = [[1,3], [-2,2]]
 k = 1
 print(kClosest(points, k))
