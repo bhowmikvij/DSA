@@ -129,4 +129,54 @@
 #  arr = [1, 3, 7, 9, 12, 10, 8, 16, 18, 22, 27]
 # create a bulidHeap method that returns a minheap
 
-#  new file will be added 
+# new file will be added 
+
+# ---------------------------------------------------------------------------------------------------------------------------
+
+# New concept DIVIDE, CONQUER, COMBINE
+
+# Psuedocode
+
+# divide And conquer(arr, p, 2):
+# if (small (arr, p, q)):
+#       return solution
+# else:
+
+#           two parts
+# Divide    m = Divide(arr,p,q) 
+#               Recursion
+# Conquer   { b = divideAndconquer(arr, p, m) 
+#           { c = divide And conquer (arr, m+1, q)
+
+# Combine   return combine(b,c) 
+
+
+# 
+
+# Psuedocode
+
+# find MaxAndMin(arr, i, j):
+#   if i== j: ==> single element
+#       min = arr(i)
+#       max = arr(i)
+#   elif i == j-1: ==> double element
+#       if arr(i) < arr (j):
+#           max = arr(j)
+#           min = arr(i)
+#       else:
+#           max = arr(i)
+#           min = arr(j)
+#   else:
+#       mid = i +(j-1)//2
+#       min1, max1 = find max And min (arr, i, mid)
+#       min2, max2 = find max And min (arr, mid+1, 3)
+# Combine
+#       if min1 < min2:
+#           min = min1
+#       else:
+#           min = min2
+#       if max1 < max2:
+#           max = max2
+#       else:
+#           max = max1
+#   return(max,min)
