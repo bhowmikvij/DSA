@@ -154,6 +154,8 @@
 # 
 
 # Psuedocode
+# Actual implementation of code 
+
 
 # find MaxAndMin(arr, i, j):
 #   if i== j: ==> single element
@@ -180,3 +182,4 @@
 #       else:
 #           max = max1
 #   return(max,min)
+
