@@ -183,3 +183,8 @@
 #           max = max1
 #   return(max,min)
 
+# -------------------------------------------------------------------------------------------
+
+# VERY IMPORTANT INTERVIEW ASKED QUESTION IN AMAZON
+
+# Finding of power of an element 
