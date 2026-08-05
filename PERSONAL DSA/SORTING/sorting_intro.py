@@ -188,3 +188,14 @@
 # VERY IMPORTANT INTERVIEW ASKED QUESTION IN AMAZON
 
 # Finding of power of an element 
+
+
+# --------------------------------------------------------------------------------------------------
+
+
+# MERGE SORT
+
+# Best Case => # comparisons = min(m, n)
+
+# Time Complexity --> # comparisons + # move
+#                 --> O(n)
