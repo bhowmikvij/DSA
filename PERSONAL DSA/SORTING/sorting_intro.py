@@ -195,7 +195,23 @@
 
 # MERGE SORT
 
+# It is stable sorting
 # Best Case => # comparisons = min(m, n)
 
 # Time Complexity --> # comparisons + # move
-#                 --> O(n)
+#                 --> O(nlogn)
+# Space Complexity --> O(N)
+
+# -----------------------
+
+# Pseudocode
+
+# merge Sort (arr, p, q):
+# if p == q:
+#   return arr(p)
+# else:
+#   mid = p + (q-p)//2
+#   right = mergeSort(arr, p, mid)
+#   left = mergeSort(arr, mid+1, q)
+#   mergeProcedure(arr, p, mid, q)
+# return arr
