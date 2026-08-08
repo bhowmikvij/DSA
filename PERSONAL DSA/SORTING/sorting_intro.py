@@ -216,3 +216,9 @@
 #   mergeProcedure(arr, p, mid, q)
 # return arr
 
+# --------------------------------------------------------------------------------------------------
+
+# QUICK SORT
+
+# Not a stable sorting algo
+# 
