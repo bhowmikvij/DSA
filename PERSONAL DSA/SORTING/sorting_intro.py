@@ -221,4 +221,10 @@
 # QUICK SORT
 
 # Not a stable sorting algo
-# 
+
+#  
+
+
+# psuedocode
+
+
