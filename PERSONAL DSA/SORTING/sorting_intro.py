@@ -221,6 +221,7 @@
 # QUICK SORT
 
 # Not a stable sorting algo
+# pivot algo
 
 #  
 
@@ -228,3 +229,4 @@
 # psuedocode
 
 
+ 
