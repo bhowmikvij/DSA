@@ -1,4 +1,10 @@
 ## Method definition of partition
+# Time Complexity:
+# Best or average case scenario : O(n logn)
+# Worst case scenario: O(n^2)
+# Space Complexity: O(1)
+
+
 def partition(arr, p, q):
   pivot = arr[p]
   i = p
