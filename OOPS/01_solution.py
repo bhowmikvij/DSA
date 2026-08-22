@@ -169,27 +169,72 @@
 # 7. Static Method
 #    Problem: Add a static method to the Car class that return a general description of a car
 
+# class Car:
+#     total_car = 0
+
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+#         Car.total_car += 1
+
+#     def get_brand(self):
+#         return self.brand + " ! "
+
+#     def full_name(self):
+#         return f"{self.brand} {self.model}"
+
+#     def fuel_type(self):
+#         return "Petrol or Diesel"
+
+#     @staticmethod # jab hum static method laga dete ha to self ki jarurat nhi padti 
+
+#     def general_description():
+#         return "Cars are the means of transport"
+    
+
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand, model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#         return "Electric charge" 
+
+
+# my_car = Car("Tesla", "Model S")
+# Car("Tata", "Safari")
+
+# # print(my_car.general_description())
+# print(Car.general_description())
+
+
+# 8. Property Decorators
+#    Problem: Use a property decorator in the Car class to make the model atribute read-only.
+
 class Car:
     total_car = 0
 
     def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
+        self.__brand = brand
+        self.__model = model
         Car.total_car += 1
 
     def get_brand(self):
-        return self.brand + " ! "
+        return self.__brand + " ! "
 
     def full_name(self):
-        return f"{self.brand} {self.model}"
+        return f"{self.__brand} {self.__model}"
 
     def fuel_type(self):
         return "Petrol or Diesel"
 
-    @staticmethod # jab hum static method laga dete ha to self ki jarurat nhi padti 
-
+    @staticmethod 
     def general_description():
         return "Cars are the means of transport"
+
+    @property
+    def model(self):
+        return self.__model
     
 
 class ElectricCar(Car):
@@ -202,7 +247,7 @@ class ElectricCar(Car):
 
 
 my_car = Car("Tesla", "Model S")
+# my_car.model = "City"
 Car("Tata", "Safari")
 
-# print(my_car.general_description())
-print(Car.general_description())
+print(my_car.model) 
