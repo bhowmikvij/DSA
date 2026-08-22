@@ -39,10 +39,47 @@
 # 3. Inheritance
 #    Problem: Create an ElectricCar class that inherits from the Car class and has an additional attribute battery_size.
 
+# class Car:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+
+#     def full_name(self):
+#         return f"{self.brand} {self.model}"
+    
+
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand, model)
+#         self.battery_size = battery_size
+
+
+# my_tesla = ElectricCar("Tesla", "Model S", "85kWh")
+# print(my_tesla.full_name()) # Tesla Model S
+
+
+# 4. Encapsulation
+#    Problem: Modify the Car class to encapsulation the brand attribute, making it private, and provide a getter method for it
+
+# Encapsulation means wrapping data (variables) and methods together inside a class.
+# It helps protect the data from being accessed or changed directly from outside the class.
+# In Python, we commonly use _ (protected) and __ (private) to indicate restricted access.
+# It improves data security and control over how data is accessed or modified.
+
+# Example:
+class Student:
+    def __init__(self, marks):
+        self.__marks = marks   # private variable
+# Here, __marks is treated as a private variable, so it should not be accessed directly from outside the class.
+
+
 class Car:
     def __init__(self, brand, model):
         self.brand = brand
         self.model = model
+
+    def get_brand(self):
+        return self.brand + " ! "
 
     def full_name(self):
         return f"{self.brand} {self.model}"
@@ -55,12 +92,5 @@ class ElectricCar(Car):
 
 
 my_tesla = ElectricCar("Tesla", "Model S", "85kWh")
-print(my_tesla.full_name()) # Tesla Model S
-
-# my_car = Car("Toyota", "Fortuner")
-# print(my_car.brand) 
-# print(my_car.model) 
-# print(my_car.full_name()) 
-
-# my_new_car = Car("Tata", "Safari")
-# print(my_new_car.model) 
+print(my_tesla.brand)
+print(my_tesla.get_brand()) # Tesla !
