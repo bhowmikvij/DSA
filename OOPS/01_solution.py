@@ -67,9 +67,9 @@
 # It improves data security and control over how data is accessed or modified.
 
 # Example:
-class Student:
-    def __init__(self, marks):
-        self.__marks = marks   # private variable
+# class Student:
+#     def __init__(self, marks):
+#         self.__marks = marks   # private variable
 # Here, __marks is treated as a private variable, so it should not be accessed directly from outside the class.
 
 
@@ -99,10 +99,47 @@ class Student:
 # 5. Polymorphorism
 #    Problem: Demonstrate polymorphism by defining a method fuel_type in both Car and ElectricCar classes, but with different behaviours.
 
+# class Car:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+
+#     def get_brand(self):
+#         return self.brand + " ! "
+
+#     def full_name(self):
+#         return f"{self.brand} {self.model}"
+
+#     def fuel_type(self):
+#         return "Petrol or Diesel"
+    
+
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand, model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#             return "Electric charge"
+
+
+# my_tesla = ElectricCar("Tesla", "Model S", "85kWh")
+# print(my_tesla.fuel_type()) # Electric charge
+
+# safari = Car("Tata", "Safari")
+# print(safari.fuel_type()) # Petrol or Diesel
+
+
+# 6. Class Variables
+#    Problem: Add a class variable to Car that keeps track of the number of cars created.
+
 class Car:
+    total_car = 0
+
     def __init__(self, brand, model):
         self.brand = brand
         self.model = model
+        Car.total_car += 1
 
     def get_brand(self):
         return self.brand + " ! "
@@ -123,10 +160,7 @@ class ElectricCar(Car):
             return "Electric charge"
 
 
-my_tesla = ElectricCar("Tesla", "Model S", "85kWh")
-print(my_tesla.fuel_type()) # Electric charge
+Car("Tesla", "Model S")
+Car("Tata", "Safari")
 
-safari = Car("Tata", "Safari")
-print(safari.fuel_type()) # Petrol or Diesel
-
-
+print(Car.total_car) # 2
