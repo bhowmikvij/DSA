@@ -128,3 +128,5 @@ print(my_tesla.fuel_type()) # Electric charge
 
 safari = Car("Tata", "Safari")
 print(safari.fuel_type()) # Petrol or Diesel
+
+
