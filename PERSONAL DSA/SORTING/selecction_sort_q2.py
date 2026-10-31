@@ -1,4 +1,4 @@
-# Methos Definition
+# Method Definition
 # Time Complexity: O(n^2)
 
 def selectionSort(arr):
