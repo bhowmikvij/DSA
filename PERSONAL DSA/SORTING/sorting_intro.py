@@ -227,8 +227,3 @@
 
 
 # psuedocode
-
-
-
-
-
